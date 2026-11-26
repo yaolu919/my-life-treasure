@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#203b35">
-<meta name="description" content="以生活管理为核心：健康、穿搭、美妆、居家、旅行、个人财务与计划。">
+<meta name="description" content="个人信息与生活管理中心：健康、穿搭、专业成长、财富认知、国际新闻、文化与日常计划。">
 <title>生活宝藏导航</title>
 <style>
 :root{--ink:#24342f;--muted:#718078;--paper:#f7f7f2;--card:#fff;--line:#e5e9e2;--green:#254b40;--mint:#e7f0e9;--gold:#b68b52}
@@ -31,8 +31,8 @@ header{display:flex;align-items:center;justify-content:space-between;gap:16px;pa
 <span style="font-size:10px;letter-spacing:1.5px;color:#9b784c">LIFE & WELLBEING</span><strong style="display:block;font-size:16px;margin:5px 0">生活管理中心</strong><span style="font-size:12px;color:#64746a">健康 · 饮食 · 运动 · 居家 · 形象 · 旅行与生活品质</span>
 </div>
 </section>
-<section class="hero"><p class="eyebrow">A LITTLE MORE WONDER IN EVERYDAY LIFE</p><h2>把真正有用的工具，<br>放进自己的日常生活。</h2><p>这里主要收集生活中真正用得上的工具：健康运动、穿搭衣橱、美妆护肤、家务收纳、家居、旅行、个人财务和生活计划。优先选择有明确用户规模、适合 iPad 或手机、能免费开始使用的项目。</p><div class="hero-note"><span class="pill">中文说明</span><span class="pill">生活实用精选</span><span class="pill">可搜索 · 可收藏</span><span class="pill">手机 / iPad / 电脑可浏览</span></div></section>
-<div class="searchbar"><input id="search" type="search" placeholder="搜索：健康、穿搭、护肤、收纳、记账、计划……" aria-label="搜索资源"></div>
+<section class="hero"><p class="eyebrow">A LITTLE MORE WONDER IN EVERYDAY LIFE</p><h2>把真正有用的工具，<br>放进自己的日常生活。</h2><p>这里不仅收集生活工具，也管理每天值得接触的信息：健康运动、穿搭审美、专业成长、财富认知、国际新闻与文化。优先选择可信、实用、有深度、免费可开始的内容，少刷随机信息，多积累真正有用的知识。</p><div class="hero-note"><span class="pill">中文说明</span><span class="pill">生活实用精选</span><span class="pill">可搜索 · 可收藏</span><span class="pill">手机 / iPad / 电脑可浏览</span></div></section>
+<div class="searchbar"><input id="search" type="search" placeholder="搜索：健康、穿搭、收纳、财经、国际新闻、计划……" aria-label="搜索资源"></div>
 <nav class="filters" id="filters"></nav>
 <div class="meta"><span id="count">正在整理资源…</span><span>点 ☆ 收藏，收藏状态保存在当前浏览器</span></div>
 <section class="grid" id="grid"></section><div class="empty" id="empty">没有找到匹配的资源，试试其他关键词或分类。</div>
@@ -193,6 +193,34 @@ const resources = [
     "l": "免费浏览 · 英文网站 · 日常与职场",
     "u": "https://www.whowhatwear.com/",
     "k": "穿搭学习 海外 时尚媒体 通勤 职场 日常 搭配 灵感"
+  }
+  ,
+  {
+    "c": "国际新闻与财经",
+    "e": "🌐",
+    "n": "Reuters 路透社",
+    "d": "国际新闻日常入口。优先看重大国际事件、全球经济数据、公司动态和金融市场报道；适合先了解事实，再决定是否深入。英文为主，官网有大量免费新闻。",
+    "l": "免费阅读为主 · 英文 · 国际新闻",
+    "u": "https://www.reuters.com/",
+    "k": "国际新闻 世界 新闻 经济 金融 市场 公司 全球"
+  },
+  {
+    "c": "国际新闻与财经",
+    "e": "📈",
+    "n": "The Wall Street Journal 华尔街日报",
+    "d": "重点关注全球经济、金融市场、企业经营、科技产业和商业趋势。适合结合你的会计、金融学习，训练企业与市场分析能力。英文为主，部分文章免费，完整数字阅读通常需要订阅。",
+    "l": "部分免费 · 英文 · 财经商业深度报道",
+    "u": "https://www.wsj.com/",
+    "k": "华尔街日报 财经 金融 企业 商业 经济 投资 科技"
+  },
+  {
+    "c": "国际新闻与财经",
+    "e": "🗞️",
+    "n": "The New York Times 纽约时报",
+    "d": "关注国际政治、社会变化、科技、科学、教育和文化。适合拓宽世界视野，理解不同国家的社会议题；阅读时注意区分新闻报道、分析和评论。英文为主，完整数字阅读通常需要订阅。",
+    "l": "部分免费 · 英文 · 国际社会与文化",
+    "u": "https://www.nytimes.com/",
+    "k": "纽约时报 国际 社会 政治 科技 科学 文化 教育"
   }
 ];
 const categories=["全部",...new Set(resources.map(x=>x.c)),"☆ 我的收藏"];
