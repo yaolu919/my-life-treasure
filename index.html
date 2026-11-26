@@ -41,67 +41,115 @@ header{display:flex;align-items:center;justify-content:space-between;gap:16px;pa
 </div>
 <script>
 const resources = [
-{c:"学习与阅读",e:"🏛️",n:"Google Arts & Culture",d:"在线探索博物馆、艺术作品、历史专题和虚拟展览，适合碎片时间拓展见识。",l:"网页 / 手机可直接体验",u:"https://artsandculture.google.com",k:"学习 艺术 博物馆 历史 文化 阅读"},
-{c:"穿搭与形象",e:"👗",n:"Libre Closet",d:"数字衣橱：给衣服拍照建档、组合穿搭、安排一周造型；可做成手机主屏幕网页应用。",l:"免费开源 / 需自行部署；开启登录后再联网使用",u:"https://github.com/Lazztech/Libre-Closet",k:"衣橱 穿搭 服装 搭配 购物"},
-{c:"穿搭与形象",e:"🧥",n:"Closet Lint",d:"本地衣橱与穿搭管理：衣物照片、搭配板、穿着记录、愿望清单排序和旅行打包。",l:"免费开源 / 需电脑运行；目前无登录，不要公开到互联网",u:"https://github.com/stephthegeek/closetlint",k:"衣橱 穿搭 服装 搭配 购物"},
-{c:"穿搭与形象",e:"🎨",n:"Awesome Design",d:"设计资源精选目录，可发现配色、字体、图标、设计灵感和界面工具。",l:"直接浏览目录",u:"https://github.com/gztchan/awesome-design",k:"设计 色彩 配色 美学 图片"},
-{c:"购物与消费",e:"🛍️",n:"Changedetection.io",d:"监控网页内容变化：商品价格、库存、票价或政策页面更新时提醒；适合做价格观察清单。",l:"需要部署 / 可自托管",u:"https://github.com/dgtlmoon/changedetection.io",k:"购物 比价 价格 促销 监控"},
-{c:"购物与消费",e:"💸",n:"Actual Budget",d:"个人预算和记账工具，适合按账户、分类和预算管理日常收支。",l:"可先看介绍 / 通常需安装",u:"https://github.com/actualbudget/actual",k:"购物 消费 预算 记账 理财"},
-{c:"购物与消费",e:"📦",n:"Open Food Facts",d:"开放食品数据库，可查询食品配料、营养标签和产品信息；适合做消费信息研究。",l:"可直接浏览网站",u:"https://github.com/openfoodfacts",k:"购物 食品 商品 营养 成分"},
-{c:"个人成长",e:"🧠",n:"Logseq",d:"双向链接笔记与个人知识管理，把读书笔记、想法、计划和经验连接成自己的知识网络。",l:"可下载使用",u:"https://github.com/logseq/logseq",k:"人生规划 成长 笔记 知识 学习"},
-{c:"个人成长",e:"🗂️",n:"AppFlowy",d:"开源个人工作空间，可组织文档、任务、项目和知识库，适合做人生与工作管理面板。",l:"个人版有免费方案 / 云端与自托管选项",u:"https://github.com/AppFlowy-IO/AppFlowy",k:"人生规划 任务 目标 笔记 效率"},
-{c:"个人成长",e:"🧭",n:"Vikunja",d:"任务与项目管理工具，把长期目标拆成任务、清单和日程。",l:"网页体验 / 自托管可选",u:"https://github.com/go-vikunja/vikunja",k:"人生规划 目标 任务 日程 效率"},
-{c:"个人成长",e:"⏱️",n:"Super Productivity",d:"任务清单、时间记录和专注管理，帮助复盘时间花在哪里。",l:"可下载使用",u:"https://github.com/johannesjo/super-productivity",k:"效率 时间管理 习惯 任务"},
-{c:"个人成长",e:"🎮",n:"Habitica",d:"把习惯和待办清单变成角色扮演游戏，用完成任务获得奖励；适合喜欢游戏化激励的人。",l:"网页 / iPhone 与 Android；免费为主",u:"https://habitica.com",k:"成长 习惯 目标 待办 游戏化 手机"},
-{c:"个人成长",e:"⌛",n:"ActivityWatch",d:"自动统计电脑上使用了哪些应用和网站，帮助复盘时间去向；数据主要保存在本机。",l:"需安装 / 免费开源",u:"https://github.com/ActivityWatch/activitywatch",k:"成长 效率 时间管理 电脑 隐私"},
-{c:"学习与阅读",e:"📚",n:"Kiwix",d:"把维基百科等知识内容保存为离线资料库，没有网络时也能阅读。",l:"可下载使用",u:"https://github.com/kiwix/kiwix",k:"学习 阅读 百科 离线 知识"},
-{c:"学习与阅读",e:"📖",n:"Calibre",d:"电子书管理工具，整理书库、转换格式、管理元数据和阅读设备。",l:"可下载使用",u:"https://github.com/kovidgoyal/calibre",k:"学习 阅读 电子书 书籍"},
-{c:"学习与阅读",e:"🧩",n:"Awesome Lists",d:"跨领域精选资源目录总入口，里面有 AI、设计、教育、健康、商业、旅行等专题清单。",l:"直接浏览目录",u:"https://github.com/sindresorhus/awesome",k:"学习 资源 导航 清单 全领域"},
-{c:"学习与阅读",e:"🌐",n:"Awesome Selfhosted",d:"按类别整理可自行托管的开源网络服务，适合进阶探索；大多数项目需要服务器或技术配置。",l:"直接浏览目录 / 偏进阶",u:"https://github.com/awesome-selfhosted/awesome-selfhosted",k:"学习 工具 软件 应用 目录 自托管"},
-{c:"学习与阅读",e:"🧰",n:"Definitive Open Source",d:"面向普通用户的开源软件精选清单，按办公、财务、媒体、效率等领域分类。",l:"直接浏览目录",u:"https://github.com/mustbeperfect/definitive-opensource",k:"学习 软件 工具 免费 开源"},
-{c:"家居与生活",e:"🏠",n:"Home Assistant",d:"智能家居自动化平台，把灯光、空调、传感器等设备联动起来。",l:"需要设备 / 安装配置",u:"https://github.com/home-assistant/core",k:"家居 智能家居 自动化 灯光"},
-{c:"家居与生活",e:"🧺",n:"Grocy",d:"家庭库存管理：食品保质期、购物清单、家务和家庭消耗品管理。",l:"有公开演示 / 自托管",u:"https://github.com/grocy/grocy",k:"家居 家庭 采购 食品 库存"},
-{c:"家居与生活",e:"🧾",n:"Paperless-ngx",d:"把纸质文件扫描归档，自动识别和搜索发票、合同、说明书等文件。",l:"需要安装 / 自托管",u:"https://github.com/paperless-ngx/paperless-ngx",k:"家居 文件 整理 扫描 收纳"},
-{c:"家居与生活",e:"🔄",n:"Syncthing",d:"在自己的设备之间同步文件，不必把所有文件交给某一家云盘。",l:"需要安装 / 多设备同步",u:"https://github.com/syncthing/syncthing",k:"家居 文件 同步 隐私 备份"},
-{c:"家居与生活",e:"📦",n:"Homebox",d:"家庭物品清单：记录家电、家具、保修、购买日期和存放位置；搬家或整理家当时很实用。",l:"需要安装 / 可看在线演示",u:"https://github.com/hay-kot/homebox",k:"家居 收纳 家庭 物品 清单 保修"},
-{c:"饮食与健康生活",e:"🥗",n:"Mealie",d:"菜谱收藏、从网页导入食谱、每周菜单和购物清单，适合规划自己做饭。",l:"有演示 / 自托管",u:"https://github.com/mealie-recipes/mealie",k:"饮食 菜谱 做饭 购物清单"},
-{c:"饮食与健康生活",e:"🛒",n:"KitchenOwl",d:"跨设备购物清单、食谱收藏、费用记录和膳食计划。",l:"需要安装 / 自托管",u:"https://github.com/TomBursch/kitchenowl",k:"饮食 菜谱 购物 清单 预算"},
-{c:"饮食与健康生活",e:"🥫",n:"Grocy 家庭食物管理",d:"管理冰箱和食品储藏：记录数量、有效期和消耗情况，减少重复购买和浪费。",l:"有公开演示",u:"https://demo.grocy.info",k:"饮食 食品 冰箱 保质期 家庭"},
-{c:"旅行与探索",e:"🗺️",n:"Organic Maps",d:"基于 OpenStreetMap 的地图与离线导航应用，适合旅行时离线查看地图。",l:"手机可下载",u:"https://github.com/organicmaps/organicmaps",k:"旅行 地图 导航 离线 户外"},
-{c:"旅行与探索",e:"🚲",n:"OpenStreetMap",d:"开放地图协作项目，全球用户共同维护道路、地点和地理信息。",l:"直接浏览地图",u:"https://www.openstreetmap.org",k:"旅行 地图 地点 户外"},
-{c:"旅行与探索",e:"🧳",n:"Wanderlog",d:"旅行行程规划：把景点放到地图上，安排路线、预算、住宿和预订信息；支持手机与 iPad。",l:"网页可用 / 有免费与付费功能",u:"https://wanderlog.com",k:"旅行 旅游 行程 地图 预算 iPad"},
-{c:"照片与娱乐",e:"📷",n:"Immich",d:"私人照片和视频备份管理，支持时间线、相册和搜索；适合建立自己的照片库。",l:"需要安装 / 自托管",u:"https://github.com/immich-app/immich",k:"照片 图片 视频 相册 备份"},
-{c:"照片与娱乐",e:"🎬",n:"Jellyfin",d:"把自己的电影、电视剧和音乐整理成私人媒体库，在不同设备上播放。",l:"需要安装 / 自托管",u:"https://github.com/jellyfin/jellyfin",k:"电影 电视 音乐 娱乐 媒体"},
-{c:"照片与娱乐",e:"🎧",n:"Audiobookshelf",d:"管理有声书、播客和音频内容，记录播放进度。",l:"需要安装 / 自托管",u:"https://github.com/advplyr/audiobookshelf",k:"阅读 有声书 播客 音频"},
-{c:"照片与娱乐",e:"🖼️",n:"PhotoPrism",d:"私人照片管理与智能分类工具，可整理、浏览和检索个人照片。",l:"需要安装 / 自托管",u:"https://github.com/photoprism/photoprism",k:"照片 图片 相册 整理"},
-{c:"照片与娱乐",e:"🪄",n:"Photopea",d:"浏览器里的图片编辑器，可处理 PSD、图层、抠图和常见图片格式；无需先安装软件。",l:"网页直接使用 / 有广告与付费选项",u:"https://www.photopea.com",k:"照片 图片 修图 设计 PSD 浏览器"},
-{c:"AI 与创作",e:"🤖",n:"Open WebUI",d:"连接本地或云端 AI 模型的聊天界面，可管理模型和知识库。",l:"需要配置模型",u:"https://github.com/open-webui/open-webui",k:"AI 人工智能 助手 聊天 模型"},
-{c:"AI 与创作",e:"🎨",n:"ComfyUI",d:"可视化 AI 图片生成工作流，适合探索图像创作、修图和生成流程。",l:"需要安装 / 通常需较好电脑",u:"https://github.com/comfyanonymous/ComfyUI",k:"AI 图片 生成 绘画 创作"},
-{c:"AI 与创作",e:"🧠",n:"Ollama",d:"在自己的电脑上运行部分开源 AI 模型，适合了解本地 AI。",l:"需要安装 / 电脑性能要求",u:"https://github.com/ollama/ollama",k:"AI 人工智能 本地模型 隐私"},
-{c:"AI 与创作",e:"🪄",n:"PhotoCraft",d:"开源图像编辑器方向的新项目，可关注其发展；使用前先确认系统支持和项目成熟度。",l:"免费开源 / 早期 Alpha，功能仍在开发",u:"https://github.com/storytold/photocraft",k:"AI 图片 修图 编辑 创作"},
-{c:"效率与办公",e:"📄",n:"Stirling-PDF",d:"PDF 合并、拆分、压缩、转换、加水印等常用文件处理工具。",l:"有在线体验 / 可自托管",u:"https://github.com/Stirling-Tools/Stirling-PDF",k:"办公 PDF 文件 文档"},
-{c:"效率与办公",e:"📤",n:"LocalSend",d:"在手机、平板和电脑之间通过本地网络传文件，不依赖网盘账号。",l:"可下载使用",u:"https://github.com/localsend/localsend",k:"办公 文件 传输 手机 电脑"},
-{c:"效率与办公",e:"🔐",n:"Bitwarden",d:"密码管理工具，帮助生成和保存不同网站的强密码。",l:"可直接使用官方服务",u:"https://github.com/bitwarden",k:"安全 密码 隐私 账号"},
-{c:"个人财务",e:"💰",n:"Firefly III",d:"自托管个人财务管理工具，记录收入支出、预算和账户。",l:"需要安装 / 自托管",u:"https://github.com/firefly-iii/firefly-iii",k:"财务 记账 预算 消费"},
-{c:"个人财务",e:"📈",n:"Wealthfolio",d:"本地优先的个人投资组合与净资产追踪应用。",l:"可下载使用",u:"https://github.com/wealthfolio/wealthfolio",k:"财务 投资 资产 净值"},
-{c:"个人财务",e:"🔔",n:"Wallos",d:"管理会员订阅和周期性扣费，提醒自己哪些服务正在自动续费。",l:"需要安装 / 自托管",u:"https://github.com/ellite/Wallos",k:"财务 订阅 会员 省钱"},
-{c:"灵感与审美",e:"📌",n:"Pinterest",d:"超大型视觉灵感库：穿搭、妆容、发型、家居布置、菜谱和旅行灵感都能搜；可建收藏板。美区 App Store 约 580 万条评分，支持 iPad。",l:"网页 / iPhone / iPad；免费为主",u:"https://apps.apple.com/us/app/pinterest/id429047995",k:"灵感 美妆 护肤 穿搭 发型 家居 美食 旅行 收藏 iPad"}, 
-{c:"穿搭与形象",e:"👚",n:"Whering 数字衣橱",d:"把自己的衣服拍照放进电子衣橱，组合搭配、做穿搭计划、整理旅行行李；官方称全球用户超过 900 万。注意：美区目前标注仅 iPhone，不是 iPad 原生应用。",l:"iPhone App；免费 + 应用内购买",u:"https://apps.apple.com/us/app/whering-your-digital-closet/id1519461680",k:"穿搭 衣橱 搭配 服装 购物 iPhone"}, 
-{c:"美妆护肤",e:"🪞",n:"Snapseed",d:"Google 出品的免费照片编辑器，可用局部调整、曲线、白平衡和修复工具练习自然肤色与照片光线；不是虚拟试妆工具。",l:"完全免费；无订阅、无应用内购买",u:"https://apps.apple.com/us/app/snapseed/id439438619",k:"美妆 护肤 修图 肤色 光线 照片 免费"},
-{c:"美妆护肤",e:"💋",n:"Shine: Virtual Makeup",d:"实时虚拟试妆，可调整底妆、眉毛、眼影、眼线、腮红和唇色；免费版可用全部基础品类和预设妆容，最多保存 3 个妆容。高级功能另收费，不订阅也能体验基础功能。",l:"免费基础版；部分高级功能付费",u:"https://apps.apple.com/us/app/shine-virtual-makeup/id6794002566",k:"美妆 化妆 虚拟试妆 眉毛 眼影 腮红 口红 iPad"}, 
-{c:"美妆护肤",e:"🧴",n:"Sephora Beauty",d:"美妆品牌与产品资料、用户评价、色号和购物信息入口；适合查产品成分与真实评价，购买前多看不同肤质反馈。",l:"网页 / App；部分地区与服务有限",u:"https://www.sephora.com",k:"美妆 护肤 化妆 品牌 评价 色号"}, 
-{c:"饮食与健康生活",e:"🍳",n:"NYT Cooking",d:"经过编辑测试的菜谱库，有步骤说明、烹饪视频、收藏夹和购物清单；美区 App Store 约 55 万条评分，iPhone / iPad 可用，完整内容需订阅。",l:"iPhone / iPad；部分免费，完整访问需订阅",u:"https://apps.apple.com/us/app/nyt-cooking-quick-tasty-meals/id911422904",k:"美食 菜谱 做饭 烹饪 购物清单 iPad"}, 
-{c:"饮食与健康生活",e:"🥘",n:"Allrecipes",d:"大众菜谱社区，适合找家常菜、烘焙和按食材搜索的做法；可参考大量用户评论和评分。",l:"网页直接使用 / App",u:"https://www.allrecipes.com",k:"美食 菜谱 家常菜 烘焙 做饭 食材"}, 
-{c:"家居与生活",e:"🛋️",n:"Houzz",d:"家居装修与室内布置灵感库，能按房间、风格和空间寻找真实案例，也可浏览家具与专业服务。",l:"网页 / iPhone / iPad",u:"https://www.houzz.com",k:"家居 装修 收纳 卧室 客厅 家具 设计"}, 
-{c:"家居与生活",e:"📐",n:"Planner 5D",d:"用 2D / 3D 方式规划房间布局、家具摆放和装修效果；适合先试摆再决定买什么。",l:"网页 / iPhone / iPad；部分功能付费",u:"https://planner5d.com",k:"家居 装修 房间 设计 3D 布局 家具"}, 
-{c:"旅行与探索",e:"🧭",n:"Wanderlog 旅行规划",d:"把景点、餐厅、酒店放到地图上安排路线，集中管理行程和预算；适合自由行前做功课。",l:"网页 / iPhone / iPad；免费 + Pro 功能",u:"https://wanderlog.com",k:"旅行 旅游 行程 规划 地图 酒店 预算"}, 
-{c:"旅行与探索",e:"🌍",n:"Tripadvisor",d:"查目的地、景点、酒店和餐厅的游客评价，适合做旅行前的交叉比较；评价需结合日期和个人需求判断。",l:"网页 / iPhone / iPad",u:"https://www.tripadvisor.com",k:"旅行 酒店 景点 餐厅 评价 攻略"}, 
-{c:"个人成长",e:"📔",n:"Day One 日记",d:"记录文字、照片、语音和生活片段，支持搜索、模板与隐私加密；美区 App Store 约 12 万条评分，支持 iPhone / iPad。",l:"iPhone / iPad；基础免费，跨设备等功能需订阅",u:"https://apps.apple.com/us/app/day-one-daily-journal-diary/id1044867788",k:"成长 日记 记录 复盘 生活 iPad"}, 
-{c:"家居与生活",e:"🧹",n:"Tody 家务清洁管理",d:"把清洁任务按房间和频率安排，减少临时想起才打扫的压力；适合建立轻量家务节奏。",l:"iPhone / iPad App；部分功能付费",u:"https://todyapp.com",k:"家务 清洁 打扫 卫生间 厨房 日程"}, 
-{c:"家居与生活",e:"🧽",n:"Sweepy 家务计划",d:"按房间管理清洁任务，设置家庭成员和任务频率，用清单把家务拆小。",l:"iPhone / iPad App；免费 + 付费功能",u:"https://sweepy.com",k:"家务 清洁 收纳 打扫 任务"}, 
-{c:"灵感与审美",e:"▶️",n:"YouTube",d:"学习化妆、穿搭、收纳、做饭、瑜伽和旅行攻略的海量视频入口；建议优先关注讲步骤、能复现的创作者。",l:"网页 / iPhone / iPad；免费 + Premium",u:"https://www.youtube.com",k:"美妆 穿搭 收纳 做饭 家务 瑜伽 旅行 学习 视频"}
-
-];
+  {
+    "c": "灵感与审美",
+    "e": "📌",
+    "n": "Pinterest",
+    "d": "全球大型灵感收藏平台。穿搭、妆容、发型、家居、菜谱和旅行都能搜，还能按主题建立自己的收藏板。",
+    "l": "Google Play：10亿+ 下载",
+    "u": "https://www.pinterest.com",
+    "k": "灵感 穿搭 美妆 发型 家居 美食 旅行 收藏"
+  },
+  {
+    "c": "效率与创作",
+    "e": "🎨",
+    "n": "Canva",
+    "d": "做简历、海报、演示文稿、社交图片和生活计划表；模板丰富，普通用户也容易上手。部分高级素材和AI功能收费。",
+    "l": "Google Play：5亿+ 下载",
+    "u": "https://www.canva.com",
+    "k": "设计 简历 海报 图片 模板 创作"
+  },
+  {
+    "c": "美妆与照片",
+    "e": "🪄",
+    "n": "Picsart",
+    "d": "照片编辑、拼图、贴纸和创意图片制作工具。基础功能可体验，部分素材和高级功能收费。",
+    "l": "Google Play：10亿+ 下载",
+    "u": "https://picsart.com",
+    "k": "修图 照片 拼图 美妆 图片 创作"
+  },
+  {
+    "c": "美妆与照片",
+    "e": "📷",
+    "n": "Snapseed",
+    "d": "Google 的照片编辑工具，适合调整光线、色彩、细节和局部效果；适合练习自然、不夸张的照片处理。",
+    "l": "Google Play：1亿+ 下载；免费",
+    "u": "https://apps.apple.com/app/snapseed/id439438619",
+    "k": "修图 照片 肤色 光线 免费 iPad"
+  },
+  {
+    "c": "美妆与照片",
+    "e": "🪞",
+    "n": "Photoroom",
+    "d": "快速去背景、制作干净的商品图和人像图片，也适合整理个人穿搭照片；部分高级功能收费。",
+    "l": "Google Play：1亿+ 下载",
+    "u": "https://www.photoroom.com",
+    "k": "修图 抠图 照片 背景 穿搭"
+  },
+  {
+    "c": "美妆与照片",
+    "e": "🖌️",
+    "n": "Adobe Express",
+    "d": "用模板制作图片、海报、短视频和社交内容，适合快速做出整洁的视觉作品；部分功能收费。",
+    "l": "Google Play：1亿+ 下载",
+    "u": "https://www.adobe.com/express/",
+    "k": "设计 图片 视频 海报 模板"
+  },
+  {
+    "c": "视频与学习",
+    "e": "▶️",
+    "n": "YouTube",
+    "d": "学习化妆、穿搭、收纳、做饭、瑜伽、旅行和专业知识的海量视频平台。免费可看，广告与Premium订阅另计。",
+    "l": "Google Play：100亿+ 下载",
+    "u": "https://www.youtube.com",
+    "k": "视频 学习 美妆 穿搭 收纳 做饭 瑜伽 旅行"
+  },
+  {
+    "c": "旅行与出行",
+    "e": "🗺️",
+    "n": "Google Maps",
+    "d": "查地点、路线、公共交通、周边商家和用户评价；旅行前做路线规划很实用。",
+    "l": "Google Play：100亿+ 下载",
+    "u": "https://maps.google.com",
+    "k": "旅行 地图 导航 地点 餐厅 出行"
+  },
+  {
+    "c": "学习与成长",
+    "e": "🦉",
+    "n": "Duolingo",
+    "d": "游戏化语言学习，适合每天用几分钟保持英语或其他语言学习节奏；免费版含广告和部分限制。",
+    "l": "Google Play：10亿+ 下载",
+    "u": "https://www.duolingo.com",
+    "k": "学习 英语 语言 习惯 成长"
+  },
+  {
+    "c": "AI 与效率",
+    "e": "🤖",
+    "n": "ChatGPT",
+    "d": "可用于学习辅导、写作整理、生活规划、旅行准备、图片理解和工作思路梳理；具体功能按账号和地区开放情况为准。",
+    "l": "Google Play：10亿+ 下载",
+    "u": "https://chatgpt.com",
+    "k": "AI 学习 写作 规划 生活 工作"
+  },
+  {
+    "c": "AI 与效率",
+    "e": "✨",
+    "n": "Google Gemini",
+    "d": "Google 的 AI 助手，可用于资料理解、头脑风暴、学习和日常问题；部分高级能力或套餐收费。",
+    "l": "Google Play：10亿+ 下载",
+    "u": "https://gemini.google.com",
+    "k": "AI 学习 搜索 写作 生活 工作"
+  },
+  {
+    "c": "视频与创作",
+    "e": "🎬",
+    "n": "CapCut 剪映国际版",
+    "d": "短视频剪辑、字幕、转场和模板工具，适合制作旅行记录、生活视频和学习作品；部分素材与功能收费。",
+    "l": "Google Play：10亿+ 下载",
+    "u": "https://www.capcut.com",
+    "k": "视频 剪辑 创作 旅行 生活"
+  }
+];;
 const categories=["全部",...new Set(resources.map(x=>x.c)),"☆ 我的收藏"];
 const grid=document.getElementById("grid"),filters=document.getElementById("filters"),search=document.getElementById("search"),empty=document.getElementById("empty"),count=document.getElementById("count");
 let active="全部";let favorites=new Set(JSON.parse(localStorage.getItem("treasure-favorites")||"[]"));
