@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#203b35">
-<meta name="description" content="跨领域私人宝藏导航：穿搭、生活、学习、旅行、家居、财务、AI与实用工具。">
+<meta name="description" content="以生活管理为核心：健康、穿搭、美妆、居家、旅行、个人财务与计划。">
 <title>生活宝藏导航</title>
 <style>
 :root{--ink:#24342f;--muted:#718078;--paper:#f7f7f2;--card:#fff;--line:#e5e9e2;--green:#254b40;--mint:#e7f0e9;--gold:#b68b52}
@@ -31,125 +31,116 @@ header{display:flex;align-items:center;justify-content:space-between;gap:16px;pa
 <span style="font-size:10px;letter-spacing:1.5px;color:#9b784c">LIFE & WELLBEING</span><strong style="display:block;font-size:16px;margin:5px 0">生活管理中心</strong><span style="font-size:12px;color:#64746a">健康 · 饮食 · 运动 · 居家 · 形象 · 旅行与生活品质</span>
 </div>
 </section>
-<section class="hero"><p class="eyebrow">A LITTLE MORE WONDER IN EVERYDAY LIFE</p><h2>把世界上有意思的工具，<br>慢慢收进自己的生活。</h2><p>这里不只收集程序员工具。穿搭、购物、学习、旅行、家居、饮食、个人财务、阅读、AI 创作……从值得一试的应用到高质量资源目录，帮你少走弯路。</p><div class="hero-note"><span class="pill">中文说明</span><span class="pill">跨领域精选</span><span class="pill">可搜索 · 可收藏</span><span class="pill">手机 / iPad / 电脑可浏览</span></div></section>
-<div class="searchbar"><input id="search" type="search" placeholder="搜索：穿搭、衣橱、记账、旅行、AI、菜谱……" aria-label="搜索资源"></div>
+<section class="hero"><p class="eyebrow">A LITTLE MORE WONDER IN EVERYDAY LIFE</p><h2>把真正有用的工具，<br>放进自己的日常生活。</h2><p>这里主要收集生活中真正用得上的工具：健康运动、穿搭衣橱、美妆护肤、家务收纳、家居、旅行、个人财务和生活计划。优先选择有明确用户规模、适合 iPad 或手机、能免费开始使用的项目。</p><div class="hero-note"><span class="pill">中文说明</span><span class="pill">生活实用精选</span><span class="pill">可搜索 · 可收藏</span><span class="pill">手机 / iPad / 电脑可浏览</span></div></section>
+<div class="searchbar"><input id="search" type="search" placeholder="搜索：健康、穿搭、护肤、收纳、记账、计划……" aria-label="搜索资源"></div>
 <nav class="filters" id="filters"></nav>
 <div class="meta"><span id="count">正在整理资源…</span><span>点 ☆ 收藏，收藏状态保存在当前浏览器</span></div>
 <section class="grid" id="grid"></section><div class="empty" id="empty">没有找到匹配的资源，试试其他关键词或分类。</div>
-<div class="notice"><strong>先说明使用门槛：</strong>“网页直接使用”表示打开网站即可开始体验；“需要安装/配置”表示要在电脑或服务器上安装，并非点开就能用；“免费开源”不等于零成本，部署可能需要设备、服务器和维护。部分商业服务有免费额度或付费功能，具体以官网为准。涉及衣橱照片、家庭物品、财务数据时，先确认隐私与账号保护；不要把敏感资料上传到不熟悉的服务。这里的收藏目前只保存在当前设备浏览器，不会自动跨设备同步。</div>
+<div class="notice"><strong>先说明使用门槛：</strong>下载量标注采用 Google Play 公开下载档位或开发者公开用户/下载数据；它们是安卓或开发者披露的规模，不等于 iPad 下载量。免费基础版不代表所有功能免费，订阅项已尽量注明。部分海外商品扫描工具的数据库对中国商品覆盖有限。涉及衣橱照片、家庭物品、财务数据时，先确认隐私与账号保护；不要把敏感资料上传到不熟悉的服务。这里的收藏目前只保存在当前设备浏览器，不会自动跨设备同步。</div>
 <footer><span>PERSONAL TREASURE MAP</span><span>精选入口 · 不代表所有项目均由本站运营</span></footer>
 </div>
 <script>
 const resources = [
   {
-    "c": "灵感与审美",
-    "e": "📌",
-    "n": "Pinterest",
-    "d": "全球大型灵感收藏平台。穿搭、妆容、发型、家居、菜谱和旅行都能搜，还能按主题建立自己的收藏板。",
-    "l": "Google Play：10亿+ 下载",
-    "u": "https://www.pinterest.com",
-    "k": "灵感 穿搭 美妆 发型 家居 美食 旅行 收藏"
+    "c": "生活灵感与审美",
+    "e": "🏛️",
+    "n": "Google Arts & Culture",
+    "d": "你特别喜欢的这个保留。把全球博物馆、艺术作品、历史专题和虚拟展览带到 iPad 上，适合闲暇时拓展审美和见识。",
+    "l": "免费 · iPad / iPhone · Google Play 10M+ 下载",
+    "u": "https://apps.apple.com/us/app/google-arts-culture/id1050970557",
+    "k": "艺术 博物馆 历史 文化 审美 灵感 iPad"
   },
   {
-    "c": "效率与创作",
-    "e": "🎨",
-    "n": "Canva",
-    "d": "做简历、海报、演示文稿、社交图片和生活计划表；模板丰富，普通用户也容易上手。部分高级素材和AI功能收费。",
-    "l": "Google Play：5亿+ 下载",
-    "u": "https://www.canva.com",
-    "k": "设计 简历 海报 图片 模板 创作"
+    "c": "穿搭与衣橱",
+    "e": "👗",
+    "n": "Whering 数字衣橱",
+    "d": "把自己的衣服拍照收进电子衣橱，组合搭配、做穿搭计划、记录穿着频率，也能规划旅行行李。官方称用户超过 900 万。注意：目前 iPhone 版，不是 iPad 原生应用；英文界面，部分造型功能另收费。",
+    "l": "免费基础功能 · iPhone · Google Play 5M+ 下载",
+    "u": "https://apps.apple.com/us/app/whering-your-digital-closet/id1519461680",
+    "k": "穿搭 衣橱 搭配 服装 购物 行李"
   },
   {
-    "c": "美妆与照片",
-    "e": "🪄",
-    "n": "Picsart",
-    "d": "照片编辑、拼图、贴纸和创意图片制作工具。基础功能可体验，部分素材和高级功能收费。",
-    "l": "Google Play：10亿+ 下载",
-    "u": "https://picsart.com",
-    "k": "修图 照片 拼图 美妆 图片 创作"
+    "c": "美妆与护肤",
+    "e": "🧴",
+    "n": "INCI Beauty 成分查询",
+    "d": "扫描或搜索护肤品、化妆品，查看成分解释和产品评分，适合购买前查成分。免费扫描可用，含广告和应用内购买；中文商品覆盖度可能有限，不能只凭评分判断是否适合自己。",
+    "l": "免费基础功能 · iPad / iPhone · 官方称下载超 10M",
+    "u": "https://apps.apple.com/us/app/inci-beauty-cosmetic-scanner/id1276113963",
+    "k": "美妆 护肤 成分 化妆品 过敏 产品查询"
   },
   {
-    "c": "美妆与照片",
-    "e": "📷",
-    "n": "Snapseed",
-    "d": "Google 的照片编辑工具，适合调整光线、色彩、细节和局部效果；适合练习自然、不夸张的照片处理。",
-    "l": "Google Play：1亿+ 下载；免费",
-    "u": "https://apps.apple.com/app/snapseed/id439438619",
-    "k": "修图 照片 肤色 光线 免费 iPad"
+    "c": "美妆与健康",
+    "e": "🥑",
+    "n": "Yuka 食品与个护扫描",
+    "d": "扫描食品和个人护理产品条码，查看营养信息、添加剂和化妆品成分分析。免费扫描可用，部分搜索功能需订阅；产品数据库偏欧美，国内商品不一定查得到，评分仅作参考。",
+    "l": "免费基础功能 · iPad / iPhone · Google Play 10M+ 下载",
+    "u": "https://apps.apple.com/us/app/yuka-food-cosmetic-scanner/id1092799236",
+    "k": "健康 食品 营养 成分 护肤 扫码"
   },
   {
-    "c": "美妆与照片",
-    "e": "🪞",
-    "n": "Photoroom",
-    "d": "快速去背景、制作干净的商品图和人像图片，也适合整理个人穿搭照片；部分高级功能收费。",
-    "l": "Google Play：1亿+ 下载",
-    "u": "https://www.photoroom.com",
-    "k": "修图 抠图 照片 背景 穿搭"
+    "c": "健康与运动",
+    "e": "🧘",
+    "n": "FitOn 居家健身",
+    "d": "有氧、力量、瑜伽、普拉提和拉伸课程，适合在家跟练；基础训练内容可免费使用，FitOn PRO 等额外服务收费。支持 iPad。",
+    "l": "免费课程为主 · iPad / iPhone · Google Play 10M+ 下载",
+    "u": "https://apps.apple.com/us/app/fiton-workouts-fitness-plans/id1442473191",
+    "k": "健康 运动 瑜伽 普拉提 居家健身 拉伸"
   },
   {
-    "c": "美妆与照片",
-    "e": "🖌️",
-    "n": "Adobe Express",
-    "d": "用模板制作图片、海报、短视频和社交内容，适合快速做出整洁的视觉作品；部分功能收费。",
-    "l": "Google Play：1亿+ 下载",
-    "u": "https://www.adobe.com/express/",
-    "k": "设计 图片 视频 海报 模板"
+    "c": "健康与身心",
+    "e": "🌙",
+    "n": "Medito 冥想与睡眠",
+    "d": "引导冥想、呼吸练习、睡前故事、雨声和白噪音。由非营利基金会提供，官方承诺永久免费、无广告、无订阅；适合睡前放松和建立日常身心照顾习惯。",
+    "l": "完全免费 · iPad / iPhone · Google Play 1M+ 下载",
+    "u": "https://apps.apple.com/us/app/medito-mindfulness-meditation/id1500780518",
+    "k": "健康 睡眠 冥想 呼吸 放松 白噪音"
   },
   {
-    "c": "视频与学习",
-    "e": "▶️",
-    "n": "YouTube",
-    "d": "学习化妆、穿搭、收纳、做饭、瑜伽、旅行和专业知识的海量视频平台。免费可看，广告与Premium订阅另计。",
-    "l": "Google Play：100亿+ 下载",
-    "u": "https://www.youtube.com",
-    "k": "视频 学习 美妆 穿搭 收纳 做饭 瑜伽 旅行"
+    "c": "居家与收纳",
+    "e": "🧹",
+    "n": "Tody 家务清洁管理",
+    "d": "按房间建立清洁任务，按实际脏乱程度安排打扫，不必每天凭感觉决定做什么。适合把厨房、卫生间、卧室等家务拆成小任务。基础可免费开始，部分功能付费；支持 iPad。",
+    "l": "免费基础版 · iPad / iPhone · Google Play 1M+ 下载",
+    "u": "https://apps.apple.com/us/app/tody/id595339588",
+    "k": "居家 收纳 清洁 家务 卫生间 厨房 整理"
   },
   {
-    "c": "旅行与出行",
-    "e": "🗺️",
-    "n": "Google Maps",
-    "d": "查地点、路线、公共交通、周边商家和用户评价；旅行前做路线规划很实用。",
-    "l": "Google Play：100亿+ 下载",
-    "u": "https://maps.google.com",
-    "k": "旅行 地图 导航 地点 餐厅 出行"
+    "c": "个人财务",
+    "e": "💰",
+    "n": "Money Manager 家庭记账",
+    "d": "手动记录收入、支出和账户余额，按月查看分类统计，也能做预算。支持多币种和简体中文，适合先把个人现金流记清楚；免费版有广告，部分功能收费。",
+    "l": "免费基础版 · iPad / iPhone · Google Play 10M+ 下载",
+    "u": "https://apps.apple.com/us/app/money-manager-expense-budget/id560481810",
+    "k": "财务 记账 收入 支出 预算 储蓄 多币种"
   },
   {
-    "c": "学习与成长",
-    "e": "🦉",
-    "n": "Duolingo",
-    "d": "游戏化语言学习，适合每天用几分钟保持英语或其他语言学习节奏；免费版含广告和部分限制。",
-    "l": "Google Play：10亿+ 下载",
-    "u": "https://www.duolingo.com",
-    "k": "学习 英语 语言 习惯 成长"
+    "c": "个人财务",
+    "e": "📊",
+    "n": "Wallet by BudgetBakers",
+    "d": "预算、账单、订阅和现金流分析，可设置储蓄目标并看消费报告。免费版可先体验，部分高级功能收费；银行自动同步受国家和银行支持范围限制，不支持时可手动记账。",
+    "l": "免费基础版 · iPad / iPhone · Google Play 10M+ 下载",
+    "u": "https://apps.apple.com/us/app/wallet-daily-budget-profit/id1032467659",
+    "k": "财务 预算 账单 订阅 消费分析 储蓄 目标"
   },
   {
-    "c": "AI 与效率",
-    "e": "🤖",
-    "n": "ChatGPT",
-    "d": "可用于学习辅导、写作整理、生活规划、旅行准备、图片理解和工作思路梳理；具体功能按账号和地区开放情况为准。",
-    "l": "Google Play：10亿+ 下载",
-    "u": "https://chatgpt.com",
-    "k": "AI 学习 写作 规划 生活 工作"
+    "c": "个人计划",
+    "e": "🗓️",
+    "n": "TickTick 滴答清单",
+    "d": "把生活目标、日常待办、提醒、习惯和日历放在一起。可以单独建立健康、家务、学习、求职等清单；基础功能免费，高级日历和部分功能需订阅。支持 iPad，含中文。",
+    "l": "免费基础版 · iPad / iPhone · Google Play 10M+ 下载",
+    "u": "https://apps.apple.com/us/app/ticktick-to-do-list-calendar/id626144601",
+    "k": "个人计划 目标 习惯 日程 待办 提醒 生活管理"
   },
   {
-    "c": "AI 与效率",
-    "e": "✨",
-    "n": "Google Gemini",
-    "d": "Google 的 AI 助手，可用于资料理解、头脑风暴、学习和日常问题；部分高级能力或套餐收费。",
-    "l": "Google Play：10亿+ 下载",
-    "u": "https://gemini.google.com",
-    "k": "AI 学习 搜索 写作 生活 工作"
-  },
-  {
-    "c": "视频与创作",
-    "e": "🎬",
-    "n": "CapCut 剪映国际版",
-    "d": "短视频剪辑、字幕、转场和模板工具，适合制作旅行记录、生活视频和学习作品；部分素材与功能收费。",
-    "l": "Google Play：10亿+ 下载",
-    "u": "https://www.capcut.com",
-    "k": "视频 剪辑 创作 旅行 生活"
+    "c": "旅行与探索",
+    "e": "🧳",
+    "n": "Tripadvisor 旅行参考",
+    "d": "查看景点、酒店、餐厅和体验项目的旅行者评价，也能整理行程。适合出发前做交叉参考，不必只看单条好评；预订和部分服务会产生费用。",
+    "l": "免费浏览 · iPad / iPhone · Google Play 100M+ 下载",
+    "u": "https://apps.apple.com/us/app/tripadvisor-plan-book-trips/id284876795",
+    "k": "旅行 旅游 景点 酒店 餐厅 评价 行程"
   }
-];;
+];
 const categories=["全部",...new Set(resources.map(x=>x.c)),"☆ 我的收藏"];
 const grid=document.getElementById("grid"),filters=document.getElementById("filters"),search=document.getElementById("search"),empty=document.getElementById("empty"),count=document.getElementById("count");
 let active="全部";let favorites=new Set(JSON.parse(localStorage.getItem("treasure-favorites")||"[]"));
